@@ -50,3 +50,4 @@ data <-merge[,ext_feats]
 DT <- data.table(data)
 tidy<-DT[,lapply(.SD,mean),by="Activity,Subject"]
 write.table(tidy,file="tidy.txt",sep="\t", row.names = FALSE)
+#### end of code ###
